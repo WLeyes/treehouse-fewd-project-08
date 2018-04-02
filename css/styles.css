@@ -17,19 +17,6 @@
   position: absolute;
   width: 1px; }
 
-.headline--primary {
-  font-size: 1.875em;
-  font-family: "Roboto Slab", serif;
-  font-weight: 900;
-  line-height: 1em; }
-
-.headline--secondary {
-  font-size: 1em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  line-height: 1.5em;
-  letter-spacing: 1px; }
-
 /*
 ////////////////////////////////////////////////////////////////////////////////
 // scss/base/_normalize.scss : GLOBAL RESET
@@ -493,27 +480,5 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058; }
-
-.grid__row {
-  margin-top: 1.25em; }
-  .grid__row p {
-    margin-bottom: 1.25em;
-    padding-left: 20px;
-    padding-right: 20px;
-    line-height: 1.5em; }
-
-.headline--primary {
-  padding-left: 0.625em;
-  margin-top: 0;
-  margin-bottom: 1.3333333333em;
-  color: #111; }
-  @media (min-width: 768px) {
-    .headline--primary {
-      text-align: center;
-      padding-left: 0; } }
-.headline--secondary {
-  color: palette(silver-chalace, light);
-  margin-top: 3.3333333333em;
-  margin-bottom: 0.9166666667em; }
 
 /*# sourceMappingURL=styles.css.map */
