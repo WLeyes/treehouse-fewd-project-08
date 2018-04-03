@@ -481,4 +481,39 @@ footer {
   padding-bottom: 30px;
   color: #ba8058; }
 
+/*
+////////////////////////////////////////////////////////////////////////////////
+// scss/components/_navigation.scss : Navigation styles
+////////////////////////////////////////////////////////////////////////////////
+*/
+.icon {
+  line-height: 2.5; }
+  .icon__heart {
+    width: 28px;
+    height: 24px; }
+  .icon__location {
+    width: 24px;
+    height: 24px; }
+  .icon__contact {
+    width: 28px;
+    height: 24px; }
+  .icon li:hover {
+    fill: red;
+    color: red; }
+
+/*
+////////////////////////////////////////////////////////////////////////////////
+// scss/components/_corgis.scss : Corgi styles
+////////////////////////////////////////////////////////////////////////////////
+*/
+body {
+  background: url(../svgs/background.svg), url(../svgs/background.svg), linear-gradient(to right, #1e4b73, rgba(17, 17, 17, 0.4));
+  background-position: left, right;
+  background-repeat: repeat-y,  repeat-y; }
+
+.logo__text {
+  fill: #EAAA7F; }
+.logo__paw {
+  fill: #F4C6A6; }
+
 /*# sourceMappingURL=styles.css.map */

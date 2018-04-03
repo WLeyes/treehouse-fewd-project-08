@@ -23,9 +23,9 @@
 
 
 // Color Palette Modifier
-// @function palette($palette, $shade: 'base') {
-//   @return map-get(map-get($palettes, $palette), $shade);
-// }
+@function palette($palette, $shade: 'base') {
+  @return map-get(map-get($palettes, $palette), $shade);
+}
 
 // Extend placeholders
 @function extender($extend) {

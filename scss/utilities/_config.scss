@@ -26,12 +26,17 @@ $white           : #fff;
 $black           : #0b0b0b;
 
 $cod-gray        : #111;
-$porcelain-white : #edeff0;
+$porcelain       : #edeff0;
+$scooter         : #39add1;
+$muddy-waters    : #ba8058;
 
 // Color usage
-$color--primary    : $cod-gray;
-
-$color--shadow     : rgba($black, .2);
+$color--primary     : $cod-gray;
+$color--background  : $porcelain;
+$color--anchor      : $scooter;
+$color--anchor-font : $cod-gray;
+$color--footer-font : $muddy-waters;
+$color--shadow      : rgba($black, .2);
 
 ////////////////////////////////////////////////////////////////////////////////
 // THEME COLORS

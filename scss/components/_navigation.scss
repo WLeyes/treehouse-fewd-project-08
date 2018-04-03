@@ -1,0 +1,25 @@
+/*
+////////////////////////////////////////////////////////////////////////////////
+// scss/components/_navigation.scss : Navigation styles
+////////////////////////////////////////////////////////////////////////////////
+*/
+
+.icon {
+  line-height: 2.5;
+  @include e(heart){
+    width: 28px;
+    height: 24px;
+  }
+  @include e(location){
+    width: 24px;
+    height: 24px;
+  }
+  @include e(contact){
+    width: 28px;
+    height: 24px;
+  }
+  & li:hover{
+    fill: red;
+    color: red;
+  }
+}
