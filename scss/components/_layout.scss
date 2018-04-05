@@ -1,0 +1,23 @@
+/*
+////////////////////////////////////////////////////////////////////////////////
+// scss/components/_layout.scss : General Layout styles
+////////////////////////////////////////////////////////////////////////////////
+*/
+
+body{
+  background-color: $white;
+  padding: 0 em(5px);
+  text-align: center;
+  @extend %centered;
+  @include media-query(medium){
+    background:  url(../svgs/background.svg) repeat,
+                 linear-gradient(to top, rgba(30, 75, 115, 1), rgba(17, 17, 17, 0.4));
+  }
+}
+
+header h1:first-of-type{
+  @include media-query(medium){
+    display: none;
+  }
+}
+

@@ -27,15 +27,22 @@ $black           : #0b0b0b;
 
 $cod-gray        : #111;
 $porcelain       : #edeff0;
+
 $scooter         : #39add1;
+
 $muddy-waters    : #ba8058;
+$tacao           : #EAAA7F;
+$manhattan       : #F4C6A6;
 
 // Color usage
 $color--primary     : $cod-gray;
 $color--background  : $porcelain;
+
 $color--anchor      : $scooter;
 $color--anchor-font : $cod-gray;
+
 $color--footer-font : $muddy-waters;
+
 $color--shadow      : rgba($black, .2);
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -58,6 +65,12 @@ $corgi: (
   // error   : $sunglo,
   // warning : $coral,
   // info    : $purple-majesty,
+);
+
+$logo: (
+  text      : $tacao,
+  circle    : $muddy-waters,
+  paw       : $manhattan,
 );
 
 
@@ -90,7 +103,7 @@ $grid-column-count          : 12;
 $max-width--grid-container  : 960px;
 
 // Border radius
-$border-radius--default     : .4em;
+$border-radius--default     : .7em;
 $border-radius--round       : 50%;
 
 // Transitions

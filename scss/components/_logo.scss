@@ -1,0 +1,60 @@
+/*
+////////////////////////////////////////////////////////////////////////////////
+// scss/components/_logo.scss : Site logo
+////////////////////////////////////////////////////////////////////////////////
+*/
+
+.logo{
+  @include fill-colors($logo, '%logo', $selector--element);
+  @extend %logo;
+  transition: transform 1s ease-out;
+@include e(text){
+  opacity: 0;
+  @include media-query(medium){
+    opacity: 1;
+  }
+  // for animating letters in logo
+  @include m(paw-p){
+  }
+  @include m(paw-a){
+  }
+  @include m(paw-w){
+  }
+  @include m(print-p){
+  }
+  @include m(print-r){
+  }
+  @include m(print-i){
+  }
+  @include m(print-n){
+  }
+  @include m(print-t){
+  }
+  @include m(kennels-k){
+  }
+  @include m(kennels-e){
+  }
+  @include m(kennels-n){
+  }
+  @include m(kennels-n2){
+  }
+  @include m(kennels-e2){
+  }
+  @include m(kennels-l){
+  }
+  @include m(kennels-s){
+  }
+}
+@include e(circle){
+}
+@include e(paw){
+  @include m(digital-pad-left){
+  }
+  @include m(digital-pad-right){
+  }
+  @include m(digital-pad-middle){
+  }
+  @include m(metacarpal){
+  }
+}
+}

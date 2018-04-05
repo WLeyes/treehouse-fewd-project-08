@@ -75,24 +75,17 @@
 // Buttons
 //////////////////////////////////////////////////////////////////////////////
 %buttons {
-  padding: 15px;
-  border-radius: $border-radius--default;
-  color: $white;
-  text-transform: uppercase;
-  outline: 0;
-  border: 0;
-  font-weight: $font-weight--medium;
-  transition: opacity $trns-duration;
-  display: block;
-  text-align: center;
-  margin-top: em(10px);
-  margin-bottom: em(10px);
   &:hover {
     opacity: .75;
   }
   &:active {
     opacity: initial;
   }
+}
+%logo {
+  width: em(140px);
+  height: em(120px);
+  margin: em(16px) auto;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -108,13 +101,10 @@
 //////////////////////////////////////////////////////////////////////////////
 
 %navigation-menu--links {
-  display: block;
   font-size: em(18px);
-  font-weight: $font-weight--medium;
   text-align: center;
-  text-decoration: none;
-  padding-top: em(14px, 18px);
-  padding-bottom: em(14px, 18px);
+  line-height: 2.5;
+  fill: #39add1;
   border-radius: $border-radius--default;
 }
 

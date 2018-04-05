@@ -4,6 +4,10 @@
 // scss/utilities/_placeholders.scss :   placeholders for: links, images, headlines, nav items
 ///////////////////////////////////////////////////////////////////////////////////////////////
 */
+body {
+  margin-left: auto;
+  margin-right: auto; }
+
 .centered {
   margin-left: auto;
   margin-right: auto; }
@@ -16,6 +20,18 @@
   padding: 0;
   position: absolute;
   width: 1px; }
+
+.logo__text, .logo__circle, .logo__paw, .logo {
+  width: 8.75em;
+  height: 7.5em;
+  margin: 1em auto; }
+
+.icon {
+  font-size: 1.125em;
+  text-align: center;
+  line-height: 2.5;
+  fill: #39add1;
+  border-radius: 0.7em; }
 
 /*
 ////////////////////////////////////////////////////////////////////////////////
@@ -426,23 +442,59 @@ ul {
 
 /*
 ////////////////////////////////////////////////////////////////////////////////
+// scss/components/_layout.scss : General Layout styles
+////////////////////////////////////////////////////////////////////////////////
+*/
+body {
+  background-color: #fff;
+  padding: 0 0.3125em;
+  text-align: center; }
+  @media (min-width: 768px) {
+    body {
+      background: url(../svgs/background.svg) repeat, linear-gradient(to top, #1e4b73, rgba(17, 17, 17, 0.4)); } }
+
+@media (min-width: 768px) {
+  header h1:first-of-type {
+    display: none; } }
+
+/*
+////////////////////////////////////////////////////////////////////////////////
+// scss/components/_keyframes.scss : Keyframe styles
+////////////////////////////////////////////////////////////////////////////////
+*/
+@keyframes fadeInScale {
+  0% {
+    transform: rotate(0) scale(0);
+    opacity: 0; }
+  60% {
+    transform: rotate(375deg) scale(1.3); }
+  80% {
+    transform: rotate(355deg) scale(0.9); }
+  100% {
+    transform: rotate(360deg) scale(1) translate(100px);
+    opacity: 1; } }
+@keyframes pulse {
+  50% {
+    transform: scale(1.5); } }
+/*
+////////////////////////////////////////////////////////////////////////////////
 // scss/components/_typography.scss : Font styles
 ////////////////////////////////////////////////////////////////////////////////
 */
 body {
   color: #111;
-  background: #edeff0;
-  text-align: center;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   margin: 0;
-  padding: 0; }
+  padding: 0 0.3125em;
+  perspective: 43.75em; }
 
 #container {
   max-width: 960px;
   background: #fff;
   margin: 0 auto;
-  height: 100%; }
+  height: 100%;
+  border-radius: 0.7em; }
   @media (min-width: 1100px) {
     #container {
       font-size: 1.125em; } }
@@ -457,18 +509,6 @@ a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700; }
-  a:hover {
-    color: #111; }
-
-header {
-  padding-top: 10px; }
-  header nav {
-    padding-bottom: 50px;
-    text-align: left; }
-
-header nav ul li {
-  display: inline-block;
-  margin-right: 20px; }
 
 main {
   padding-top: 50px; }
@@ -486,34 +526,65 @@ footer {
 // scss/components/_navigation.scss : Navigation styles
 ////////////////////////////////////////////////////////////////////////////////
 */
-.icon {
-  line-height: 2.5; }
-  .icon__heart {
-    width: 28px;
-    height: 24px; }
-  .icon__location {
-    width: 24px;
-    height: 24px; }
-  .icon__contact {
-    width: 28px;
-    height: 24px; }
-  .icon li:hover {
+a {
+  fill: #39add1;
+  color: #39add1; }
+  a:hover svg {
     fill: red;
-    color: red; }
+    animation: fadeInScale 1s .2s ease-in-out forwards; }
+
+.text:hover {
+  color: #111;
+  transform: scale(1.3) rotate(15deg);
+  border-bottom: 1px solid #39add1; }
+
+.icon__heart {
+  opacity: 0;
+  width: 28px;
+  height: 24px; }
+.icon__location {
+  opacity: 0;
+  width: 24px;
+  height: 24px; }
+.icon__contact {
+  opacity: 0;
+  width: 28px;
+  height: 24px; }
+@media (min-width: 768px) {
+  .icon {
+    display: inline;
+    padding: 0.3125em;
+    margin: 0.3125em; }
+    .icon__heart {
+      opacity: 1;
+      width: 28px;
+      height: 24px; }
+    .icon__location {
+      opacity: 1;
+      width: 24px;
+      height: 24px; }
+    .icon__contact {
+      opacity: 1;
+      width: 28px;
+      height: 24px; } }
 
 /*
 ////////////////////////////////////////////////////////////////////////////////
-// scss/components/_corgis.scss : Corgi styles
+// scss/components/_logo.scss : Site logo
 ////////////////////////////////////////////////////////////////////////////////
 */
-body {
-  background: url(../svgs/background.svg), url(../svgs/background.svg), linear-gradient(to right, #1e4b73, rgba(17, 17, 17, 0.4));
-  background-position: left, right;
-  background-repeat: repeat-y,  repeat-y; }
-
-.logo__text {
-  fill: #EAAA7F; }
-.logo__paw {
-  fill: #F4C6A6; }
+.logo {
+  transition: transform 1s ease-out; }
+  .logo__text {
+    fill: #EAAA7F; }
+  .logo__circle {
+    fill: #ba8058; }
+  .logo__paw {
+    fill: #F4C6A6; }
+  .logo__text {
+    opacity: 0; }
+    @media (min-width: 768px) {
+      .logo__text {
+        opacity: 1; } }
 
 /*# sourceMappingURL=styles.css.map */
