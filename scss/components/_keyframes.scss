@@ -42,8 +42,45 @@
   }
 }
 
+
+
+
+// Logo keyframes
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-circle {
+  100% {
+    fill: #ba8058;
+  }
+}
+
+@keyframes fill-paw {
+  100% {
+    fill: #F4C6A6;
+  }
+}
+
+@keyframes fill-text {
+  100% {
+    fill: #EAAA7F;
+  }
+}
+
 @keyframes pulse {
   50% {
-    transform: scale(1.5);
+    transform: scale(1.5) rotate(25deg);
+  }
+  100% {
+    stroke: transparent;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    stroke: transparent;
   }
 }
