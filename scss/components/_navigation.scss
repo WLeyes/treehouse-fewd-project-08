@@ -9,8 +9,10 @@ a {
   fill: $scooter;
   color: $scooter;
   &:hover svg{
-    fill: red;
-    animation: fadeInScale 1s .2s ease-in-out forwards;
+    animation: fadeInScale 1.5s .2s ease-in-out forwards;
+    @include media-query(medium) {
+      animation: fadeInScaleMedium 1.5s .2s ease-in-out forwards;
+    }
   }
 }
 
@@ -47,25 +49,6 @@ a {
   @include media-query(medium){
     display: inline;
     padding: em(5px);
-    margin: em(5px);
-
-    @include e(heart){
-      opacity: 1;
-      width: 28px;
-      height: 24px;
-    }
-
-    @include e(location){
-      opacity: 1;
-      width: 24px;
-      height: 24px;
-    }
-
-    @include e(contact){
-      opacity: 1;
-      width: 28px;
-      height: 24px;
-    } 
   }
   
 }

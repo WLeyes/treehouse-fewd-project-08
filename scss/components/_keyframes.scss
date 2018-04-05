@@ -14,10 +14,31 @@
   }
   80% { 
     transform: rotate(355deg) scale(0.9);
+    fill: $scooter;
   }
   100% {
     transform: rotate(360deg) scale(1) translate(100px);
     opacity: 1;
+    fill: red;
+  }
+}
+
+@keyframes fadeInScaleMedium {
+  0% {
+    transform: rotate(0) scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: rotate(375deg) scale(1.3);
+  }
+  80% { 
+    transform: rotate(355deg) scale(0.9);
+    fill: $scooter;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+    fill: red;
   }
 }
 

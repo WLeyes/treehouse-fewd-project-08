@@ -469,10 +469,25 @@ body {
   60% {
     transform: rotate(375deg) scale(1.3); }
   80% {
-    transform: rotate(355deg) scale(0.9); }
+    transform: rotate(355deg) scale(0.9);
+    fill: #39add1; }
   100% {
     transform: rotate(360deg) scale(1) translate(100px);
-    opacity: 1; } }
+    opacity: 1;
+    fill: red; } }
+@keyframes fadeInScaleMedium {
+  0% {
+    transform: rotate(0) scale(0);
+    opacity: 0; }
+  60% {
+    transform: rotate(375deg) scale(1.3); }
+  80% {
+    transform: rotate(355deg) scale(0.9);
+    fill: #39add1; }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+    fill: red; } }
 @keyframes pulse {
   50% {
     transform: scale(1.5); } }
@@ -530,8 +545,10 @@ a {
   fill: #39add1;
   color: #39add1; }
   a:hover svg {
-    fill: red;
-    animation: fadeInScale 1s .2s ease-in-out forwards; }
+    animation: fadeInScale 1.5s .2s ease-in-out forwards; }
+    @media (min-width: 768px) {
+      a:hover svg {
+        animation: fadeInScaleMedium 1.5s .2s ease-in-out forwards; } }
 
 .text:hover {
   color: #111;
@@ -553,20 +570,7 @@ a {
 @media (min-width: 768px) {
   .icon {
     display: inline;
-    padding: 0.3125em;
-    margin: 0.3125em; }
-    .icon__heart {
-      opacity: 1;
-      width: 28px;
-      height: 24px; }
-    .icon__location {
-      opacity: 1;
-      width: 24px;
-      height: 24px; }
-    .icon__contact {
-      opacity: 1;
-      width: 28px;
-      height: 24px; } }
+    padding: 0.3125em; } }
 
 /*
 ////////////////////////////////////////////////////////////////////////////////
