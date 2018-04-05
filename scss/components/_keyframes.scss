@@ -70,12 +70,24 @@
   }
 }
 
+@keyframes threeSixy-y {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
 @keyframes pulse {
   50% {
     transform: scale(1.5) rotate(25deg);
   }
   100% {
     stroke: transparent;
+  }
+}
+
+@keyframes scaleUp{
+  50% {
+    transform: scale(1.4);
   }
 }
 

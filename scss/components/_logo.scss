@@ -10,39 +10,72 @@
   padding: em(10px);
 @include e(text){
   opacity: 0;
+  fill: transparent;
+  transform-origin: 50% 62%;
+  animation: fill-text 3.8s .2s forwards, threeSixy-y 1.5s 4.8s backwards;
   @include media-query(medium){
     opacity: 1;
   }
   // for animating letters in logo
   @include m(paw-p){
+    transform-origin: 50% 40%;
+    animation: scaleUp .1s 3s backwards;
   }
   @include m(paw-a){
+    transform-origin: 50% 40%;
+    animation: scaleUp .2s 3s backwards;
   }
   @include m(paw-w){
+    transform-origin: 50% 40%;
+    animation: scaleUp .3s 3s backwards;
   }
   @include m(print-p){
+    transform-origin: 50% 40%;
+    animation: scaleUp .4s 3s backwards;
   }
   @include m(print-r){
+    transform-origin: 50% 40%;
+    animation: scaleUp .5s 3s backwards;
   }
   @include m(print-i){
+    transform-origin: 50% 40%;
+    animation: scaleUp .6s 3s backwards;
   }
   @include m(print-n){
+    transform-origin: 50% 40%;
+    animation: scaleUp .7s 3s backwards;
   }
   @include m(print-t){
+    transform-origin: 50% 40%;
+    animation: scaleUp .8s 3s backwards;
   }
   @include m(kennels-k){
+    transform-origin: 50% 40%;
+    animation: scaleUp .9s 3s backwards;
   }
   @include m(kennels-e){
+    transform-origin: 50% 40%;
+    animation: scaleUp 1s 3s backwards;
   }
   @include m(kennels-n){
+    transform-origin: 50% 40%;
+    animation: scaleUp 1.1s 3s backwards;
   }
   @include m(kennels-n2){
+    transform-origin: 50% 40%;
+    animation: scaleUp 1.2s 3s backwards;
   }
   @include m(kennels-e2){
+    transform-origin: 50% 40%;
+    animation: scaleUp 1.3s 3s backwards;
   }
   @include m(kennels-l){
+    transform-origin: 50% 40%;
+    animation: scaleUp 1.4s 3s backwards;
   }
   @include m(kennels-s){
+    transform-origin: 50% 40%;
+    animation: scaleUp 1.5s 3s backwards;
   }
 }
 @include e(circle){
