@@ -21,6 +21,11 @@ body {
   position: absolute;
   width: 1px; }
 
+.corgi--sable:hover, .corgi--fawn:hover, .corgi--red:hover, .corgi--stone:hover {
+  opacity: .75; }
+.corgi--sable:active, .corgi--fawn:active, .corgi--red:active, .corgi--stone:active {
+  opacity: initial; }
+
 .logo {
   width: 8.75em;
   height: 7.5em;
@@ -548,6 +553,10 @@ a {
   color: #39add1;
   font-weight: 700; }
 
+ul {
+  padding: 0;
+  list-style-type: none; }
+
 main {
   padding-top: 50px; }
   main h2 {
@@ -693,5 +702,28 @@ a {
       stroke-dasharray: 140;
       stroke-dashoffset: 60;
       animation: offset 3s linear forwards, fill-paw 0.8s 3s forwards, fadeOut 3s 6s forwards; }
+
+/*
+////////////////////////////////////////////////////////////////////////////////
+// scss/components/_corgi.scss : Corgi styles
+////////////////////////////////////////////////////////////////////////////////
+*/
+.corgi--sable {
+  fill: #ba8058; }
+.corgi--fawn {
+  fill: #EAAA7F; }
+.corgi--red {
+  fill: #834B29; }
+.corgi--stone {
+  fill: #52595E; }
+
+.nose_and_eyes {
+  fill: #2D3339; }
+
+.brows {
+  fill: #DA8058; }
+
+.white {
+  fill: #FBFEFF; }
 
 /*# sourceMappingURL=styles.css.map */

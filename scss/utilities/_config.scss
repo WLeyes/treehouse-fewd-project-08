@@ -32,6 +32,8 @@ $scooter         : #39add1;
 
 $muddy-waters    : #ba8058;
 $tacao           : #EAAA7F;
+$nutmeg          : #834B29;
+$abbey           : #52595E;
 $manhattan       : #F4C6A6;
 
 // Color usage
@@ -60,11 +62,10 @@ $palettes: (
 
 // Placeholder for corgi fill colors
 $corgi: (
-  // default : $malibu,
-  // success : $emerald,
-  // error   : $sunglo,
-  // warning : $coral,
-  // info    : $purple-majesty,
+  sable : $muddy-waters,
+  fawn  : $tacao,
+  red : $nutmeg,
+  stone : $abbey,
 );
 
 $logo: (
