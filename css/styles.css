@@ -21,9 +21,9 @@ body {
   position: absolute;
   width: 1px; }
 
-.corgi--sable:hover, .corgi--fawn:hover, .corgi--red:hover, .corgi--stone:hover {
+#corgi--sable:hover, #corgi--fawn:hover, #corgi--red:hover, #corgi--stone:hover {
   opacity: .75; }
-.corgi--sable:active, .corgi--fawn:active, .corgi--red:active, .corgi--stone:active {
+#corgi--sable:active, #corgi--fawn:active, #corgi--red:active, #corgi--stone:active {
   opacity: initial; }
 
 .logo {
@@ -462,6 +462,10 @@ body {
   header h1:first-of-type {
     display: none; } }
 
+li {
+  max-width: 150px;
+  max-height: 150px; }
+
 /*
 ////////////////////////////////////////////////////////////////////////////////
 // scss/components/_keyframes.scss : Keyframe styles
@@ -492,7 +496,7 @@ body {
   100% {
     transform: rotate(360deg) scale(1);
     opacity: 1;
-    fill: red; } }
+    fill: #5fcf80; } }
 @keyframes offset {
   100% {
     stroke-dashoffset: 0; } }
@@ -545,17 +549,32 @@ body {
 p {
   max-width: 350px;
   margin: 35px auto 0;
+  padding: 0.3125em;
   line-height: 2em;
-  text-align: left; }
+  text-align: justify; }
 
 a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700; }
 
-ul {
+main ul {
   padding: 0;
-  list-style-type: none; }
+  list-style-type: none;
+  display: flex;
+  flex-direction: column; }
+  main ul li {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-top: 0.3125em; }
+  main ul span {
+    padding-top: 0.3125em;
+    color: #ba8058; }
+  @media (min-width: 768px) {
+    main ul {
+      flex-direction: row;
+      justify-content: space-around; } }
 
 main {
   padding-top: 50px; }
@@ -667,9 +686,9 @@ a {
   .logo__circle {
     fill: transparent;
     stroke: #111;
-    stroke-width: 2;
-    stroke-dasharray: 320;
-    stroke-dashoffset: 320;
+    stroke-width: 2px;
+    stroke-dasharray: 320px;
+    stroke-dashoffset: 320px;
     transform-origin: 50% 40%;
     animation: offset 3s linear forwards, fill-circle 0.8s 3s forwards, pulse 1s 3.8s backwards, fadeOut 3s 6s forwards; }
   .logo__paw {
@@ -677,30 +696,30 @@ a {
     .logo__paw--digital-pad-left {
       fill: transparent;
       stroke: #111;
-      stroke-width: 2;
-      stroke-dasharray: 60;
-      stroke-dashoffset: 60;
+      stroke-width: 2px;
+      stroke-dasharray: 60px;
+      stroke-dashoffset: 60px;
       animation: offset 3s linear forwards, fill-paw 0.8s 3s forwards, fadeOut 3s 6s forwards; }
     .logo__paw--digital-pad-right {
       fill: transparent;
       stroke: #111;
-      stroke-width: 2;
-      stroke-dasharray: 60;
-      stroke-dashoffset: 60;
+      stroke-width: 2px;
+      stroke-dasharray: 60px;
+      stroke-dashoffset: 60px;
       animation: offset 3s linear forwards, fill-paw 0.8s 3s forwards, fadeOut 3s 6s forwards; }
     .logo__paw--digital-pad-middle {
       fill: transparent;
       stroke: #111;
-      stroke-width: 2;
-      stroke-dasharray: 60;
-      stroke-dashoffset: 60;
+      stroke-width: 2px;
+      stroke-dasharray: 60px;
+      stroke-dashoffset: 60px;
       animation: offset 3s linear forwards, fill-paw 0.8s 3s forwards, fadeOut 3s 6s forwards; }
     .logo__paw--metacarpal {
       fill: transparent;
       stroke: #111;
-      stroke-width: 2;
-      stroke-dasharray: 140;
-      stroke-dashoffset: 60;
+      stroke-width: 2px;
+      stroke-dasharray: 140px;
+      stroke-dashoffset: 60px;
       animation: offset 3s linear forwards, fill-paw 0.8s 3s forwards, fadeOut 3s 6s forwards; }
 
 /*
@@ -708,14 +727,14 @@ a {
 // scss/components/_corgi.scss : Corgi styles
 ////////////////////////////////////////////////////////////////////////////////
 */
-.corgi--sable {
-  fill: #ba8058; }
-.corgi--fawn {
-  fill: #EAAA7F; }
-.corgi--red {
-  fill: #834B29; }
-.corgi--stone {
-  fill: #52595E; }
+#corgi--sable {
+  color: #ba8058; }
+#corgi--fawn {
+  color: #EAAA7F; }
+#corgi--red {
+  color: #834B29; }
+#corgi--stone {
+  color: #52595E; }
 
 .nose_and_eyes {
   fill: #2D3339; }
@@ -725,5 +744,8 @@ a {
 
 .white {
   fill: #FBFEFF; }
+
+.corgi:hover {
+  transform: scale(1.3) rotate(25deg); }
 
 /*# sourceMappingURL=styles.css.map */

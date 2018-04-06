@@ -4,10 +4,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 */
 
-.logo{
-  // @include fill-colors($logo, '%logo', $selector--element);
-  @extend %logo;
-  padding: em(10px);
+.logo {
+@extend %logo;
+padding: em(10px);
 @include e(text){
   opacity: 0;
   fill: transparent;
@@ -81,9 +80,9 @@
 @include e(circle){
   fill: transparent;
   stroke: #111;
-  stroke-width: 2;
-  stroke-dasharray: 320;
-  stroke-dashoffset: 320;
+  stroke-width: 2px;
+  stroke-dasharray: 320px;
+  stroke-dashoffset: 320px;
   transform-origin: 50% 40%;
   animation: offset 3s linear forwards, fill-circle 0.8s 3s forwards, pulse 1s 3.8s backwards, fadeOut 3s 6s forwards;
 }
@@ -92,33 +91,33 @@
   @include m(digital-pad-left){
     fill: transparent;
     stroke: #111;
-    stroke-width: 2;
-    stroke-dasharray: 60;
-    stroke-dashoffset: 60;
+    stroke-width: 2px;
+    stroke-dasharray: 60px;
+    stroke-dashoffset: 60px;
     animation: offset 3s linear forwards, fill-paw 0.8s 3s forwards, fadeOut 3s 6s forwards;
   }
   @include m(digital-pad-right){
     fill: transparent;
     stroke: #111;
-    stroke-width: 2;
-    stroke-dasharray: 60;
-    stroke-dashoffset: 60;
+    stroke-width: 2px;
+    stroke-dasharray: 60px;
+    stroke-dashoffset: 60px;
     animation: offset 3s linear forwards, fill-paw 0.8s 3s forwards, fadeOut 3s 6s forwards;
   }
   @include m(digital-pad-middle){
     fill: transparent;
     stroke: #111;
-    stroke-width: 2;
-    stroke-dasharray: 60;
-    stroke-dashoffset: 60;
+    stroke-width: 2px;
+    stroke-dasharray: 60px;
+    stroke-dashoffset: 60px;
     animation: offset 3s linear forwards, fill-paw 0.8s 3s forwards, fadeOut 3s 6s forwards;
   }
   @include m(metacarpal){
     fill: transparent;
     stroke: #111;
-    stroke-width: 2;
-    stroke-dasharray: 140;
-    stroke-dashoffset: 60;
+    stroke-width: 2px;
+    stroke-dasharray: 140px;
+    stroke-dashoffset: 60px;
     animation: offset 3s linear forwards, fill-paw 0.8s 3s forwards, fadeOut 3s 6s forwards;
   }
 }

@@ -38,6 +38,7 @@ $manhattan       : #F4C6A6;
 
 // Color usage
 $color--primary     : $cod-gray;
+$color--secondary   : $muddy-waters;
 $color--background  : $porcelain;
 
 $color--anchor      : $scooter;
@@ -62,10 +63,10 @@ $palettes: (
 
 // Placeholder for corgi fill colors
 $corgi: (
-  sable : $muddy-waters,
-  fawn  : $tacao,
-  red : $nutmeg,
-  stone : $abbey,
+  "sable" : $muddy-waters,
+  "fawn"  : $tacao,
+  "red" : $nutmeg,
+  "stone" : $abbey,
 );
 
 $logo: (

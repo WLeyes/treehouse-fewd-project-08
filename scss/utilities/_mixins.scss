@@ -101,7 +101,7 @@ animation: #{$str};
 @mixin fill-colors($map,$placeholder, $selector: $selector--modifier) { // By setting $selector vars in config I can manupulate BEM easier
   @each $theme, $color in $map {
     &#{$selector}#{$theme} {
-      fill: $color;
+      color: $color;
       @extend #{$placeholder}; // allows flexabilty on which placeholder to use making this more reusable
     }
   }

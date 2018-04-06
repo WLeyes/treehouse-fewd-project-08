@@ -28,8 +28,9 @@ body {
 p {
   max-width: 350px;
   margin: 35px auto 0;
+  padding: em(5px);
   line-height: 2em;
-  text-align: left;
+  text-align: justify;
 }
 
 a {
@@ -38,9 +39,25 @@ a {
   font-weight: 700;
 }
 
-ul {
+main ul {
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  li{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-top: em(5px);
+  }
+  span{
+    padding-top: em(5px);
+    color: $color--secondary;
+  }
+  @include media-query(medium){
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 main {

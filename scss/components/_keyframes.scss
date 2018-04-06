@@ -38,7 +38,7 @@
   100% {
     transform: rotate(360deg) scale(1);
     opacity: 1;
-    fill: red;
+    fill: #5fcf80;
   }
 }
 
@@ -54,19 +54,19 @@
 
 @keyframes fill-circle {
   100% {
-    fill: #ba8058;
+    fill: $muddy-waters;
   }
 }
 
 @keyframes fill-paw {
   100% {
-    fill: #F4C6A6;
+    fill: $manhattan;
   }
 }
 
 @keyframes fill-text {
   100% {
-    fill: #EAAA7F;
+    fill: $tacao;
   }
 }
 
